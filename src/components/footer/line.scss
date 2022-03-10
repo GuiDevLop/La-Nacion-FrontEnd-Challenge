@@ -1,0 +1,52 @@
+.rows {
+    margin: 0px;
+    padding: 12px 0px;
+    width: inherit;
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }  
+  .journalslinks, .vinoslinks, .envioslinks, .sectionslinks, .captcha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+  }  
+  .journalslinks {
+    &::before {
+      padding-right: 16px;
+      content: "Revistas:";
+    }
+  }  
+  .vinoslinks {
+    &::before {
+      padding-right: 16px;
+      content: "Club de vino:";
+    }
+  }  
+  .envioslinks {
+    &::before {
+      padding-right: 16px;
+      content: "Envíos:";
+    }
+  }  
+  .captcha > ul {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+    &::before {
+      padding-right: 16px;
+      content: "Protegido por re CAPTCHA:";
+    }
+  }  
+  ul {
+    a {
+      padding-right: 16px;
+      text-decoration: none;
+    }
+  }
+  

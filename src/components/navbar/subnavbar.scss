@@ -1,0 +1,133 @@
+@import "../../scss/_colors.scss";
+
+// MAIN
+
+.sub {
+  .newsletter, .weather, .clubnacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    border: transparent;
+  }
+  .beneficios {
+    margin-right: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// DOLAR
+
+.dolar {
+  height: 40px;
+  min-width: 335px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bna {
+  font-size: 0.875rem;
+  padding-right: 10px;
+  font-weight: 700;
+  &::before {
+    content: "BNA:";
+    font-weight: 400;
+  }
+}
+
+.blue {
+  font-size: 0.875rem;
+  padding-right: 10px;
+  font-weight: 700;
+  &::before {
+    content: "Blue:";
+    font-weight: 400;
+  }
+}
+
+.dolarlink {
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $Primary;
+}
+
+// WEATHER
+
+.weather {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.weather-icon {
+  width: 22px;
+}
+
+.gradius {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0px 6px;
+}
+
+// NEWSLETTER
+
+.newsletter {
+  cursor: pointer;
+  text-decoration: none;
+  color: $Primary;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// CLUB
+
+.clubnacion {
+  cursor: pointer;
+  text-decoration: none;
+  color: $Primary;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// MEDIA
+
+.sub {
+  @media (min-width: 1024px) {
+    background-color: $Secondary;
+  }
+  @media (min-width: 1259px) {
+    .lay {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 1023px) {
+    .newsletter, .weather {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .clubnacion {
+      display: none;
+    }
+  }
+  @media (max-width: 351px) {
+    .dolarlink {
+      display: none;
+    }
+  }
+}
+
+.row {
+  @media (min-width: 1259px) {
+    width: 1260px;
+  }
+}

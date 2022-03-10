@@ -1,0 +1,171 @@
+@import "../../scss/_colors.scss";
+
+// LEFT
+
+.left {
+  padding-left: 16px;
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  display: none;
+}
+
+.sections,
+.search {
+  padding: 12px 16px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  background: $Secondary;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  border-color: $Secondary;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    padding-left: 9px;
+    width: 12px;
+  }
+  &:hover {
+    cursor: pointer;
+    background: $Tertiary;
+  }
+}
+
+// RIGHT
+
+.right {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signin {
+  display: none;
+}
+
+.signin {
+  height: 40px;
+  width: 96px;
+  padding: 12px 16px;
+  margin: 0px 0px 0px 0px;
+  background: $Secondary;
+  border-color: $Primary;
+  color: $Primary;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid $Primary;
+  border-radius: 6px;
+  &:hover {
+    cursor: pointer;
+    background: $Primary;
+    border-color: $Primary;
+    color: $White;
+  }
+}
+
+.suscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 12px 16px;
+  margin-top: -6px;
+  text-decoration: none;
+  color: $Primary;
+  border-radius: 6px;
+  &:hover {
+    background: $Black;
+    border-color: $Black;
+    color: $Yellow;
+    cursor: pointer;
+  }
+}
+
+// MEDIA
+
+@media (max-width: 1023px) {
+  .suscribe {
+    padding: 0px 16px 6px 0px;
+    margin: 0;
+    background: transparent;
+    border: transparent;
+    &:hover {
+      background: none;
+      border-color: none;
+      color: $Black;
+      cursor: pointer;
+    }
+  }
+  .row .logo img {
+    padding-left: 18px;
+  }
+
+  .searchicon {
+    margin: 0;
+    background: transparent;
+    border: transparent;
+  }
+}
+
+@media (min-width: 1024px) {
+  .row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .suscribe {
+    margin-right: 25px;
+    width: 105px;
+    height: 40px;
+    border: $Separator;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $Yellow;
+    color: $Black;
+  }
+  .navbar .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .signin {
+    display: inline-block;
+  }
+  .searchicon,
+  .icon {
+    display: none;
+  }
+  .row .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 300px;
+      height: 30px;
+    }
+  }
+}
+
+.suscribe {
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+}
+
+// ADD
+
+.icon {
+  height: 18px;
+}

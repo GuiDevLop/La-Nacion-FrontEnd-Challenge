@@ -1,0 +1,45 @@
+@import "../../../scss/_colors.scss";
+
+.articletitle {
+  padding: 0px 16px;
+  h1 {
+    margin: 0px;
+    padding: 8px 0px;
+    border-bottom: $Separator;
+    font-family: SuecaSlab-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: $Title;
+  }  
+  a {
+    text-decoration: none;
+  }
+}
+
+.articleblock {
+    width: 100%;
+    padding-top: 5px;    
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      .articleleft {
+        border-right: $Separator;
+        padding-right: 40px;
+      }
+      .articleright {
+        padding-left: 40px;
+      }
+    }
+}
+  
+.section {
+  margin-top: 20px;  
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+}
